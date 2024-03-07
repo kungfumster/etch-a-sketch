@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 * {
     margin: 0;
-    outline: red auto;
-    outline-style: solid;
+    font-family: 'Roboto', sans-serif;
+
 }
 
 body {
@@ -13,12 +15,75 @@ body {
     width:100vw;
 }
 
+/* Etch-a-sketch body */
+#etch-a-sketch-body {
+    display: flex;
+    background-color: hsl(0, 53%, 40%);
+    height: 80%;
+    min-width: auto;
+    justify-content: center;
+    padding: 50px;
+    border-radius: 5px;
+    outline: hsl(0, 53%, 35%) 2px;
+    outline-style: solid;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
+
+/* Dimension Popup */
+
+#dimension-container {
+    margin-right: 50px;
+    display:flex;
+    flex-direction: column;
+}
+
+#dimension-button {
+    height: 50px;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#popup {
+    display:flex;
+    flex-direction: column;
+    margin-top: 10px;
+    width: 200px;
+    padding: 40px;
+    visibility: hidden;
+}
+
+#popup label {
+    color: white;
+}
+
+#popup input {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    height:40px;
+    border-radius: 5px;
+    font-size:16px;
+    padding: 0px 10px;
+
+}
+#update-button {
+    height: 35px;
+    width: 100px;
+    align-self:center;
+    border-radius: 5px;
+    border: hsl(0, 53%, 35%) 1px;
+    border-style: solid;
+}
+
+/* Etch-a-sketch screen */
 #container {
     display: flex;
-    height: 80%;
-    width: 80%;
+    aspect-ratio: 1/1;
     flex-wrap: wrap;
+    outline: hsl(0, 53%, 35%); 2px;
+    outline-style: solid;
 }
 
 .row {
@@ -29,5 +94,10 @@ body {
 
 .pixel {
     display: flex;
-    flex:auto;
+    /* flex:auto; */
+    aspect-ratio: 1/1;
+    background-color: hsl(0, 0%, 90%);
+    outline: hsl(0, 0%, 100%) 1px;
+    outline-style: solid;
 }
+
