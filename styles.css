@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    outline: red auto;
+    outline-style: solid;
+}
+
+body {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex:1;
+    height:100vh;
+    width:100vw;
+}
+
+
+#container {
+    display: flex;
+    height: 80%;
+    width: 80%;
+    flex-wrap: wrap;
+}
+
+.row {
+    display:flex;
+    flex-grow: 1;
+    width: 100%;
+}
+
+.pixel {
+    display: flex;
+    flex:auto;
+}
